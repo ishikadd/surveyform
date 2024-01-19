@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="form.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relationship Preference Survey</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 id="title">Relationship Preference Survey</h1>
+      <p id="description">
+        Thank you for taking the time to provide your input. Your responses are valuable to me.
+      </p>
+    </header>
+  </div>
+
+  <form id="survey-form">
+    <div class="input-element">
+      <label id="name-label">Name</label>
+      <input id="name" type="text" placeholder="enter your name" class="formControl" required>
+    </div>
+    <div class="input-element">
+      <label id="email-label">Email Address</label>
+      <input id="email" type="email" placeholder="enter your Email" class="formControl" required>
+    </div>
+    <div class="input-element">
+      <label id="number-label">Your Age</label>
+      <input id="number" type="number" min="20" max="25" placeholder="enter your age" class="formControl" required>
+    </div>
+
+    <div class="input-element">
+      <label id="select-label" for="relationship_type">
+        What type of relationship would you like to have with me?
+      </label>
+      <select id="dropdown" name="relationship_type" class="formControl" required>
+        <option value="Friendship">Just Friends</option>
+        <option value="Nothing">Nothing (get over yourself)</option>
+        <option value="Romantic">Romantic, be my GF</option>
+        <option value="Flirt">I just think you are HOT, maybe flirting!!?</option>
+      </select>
+    </div>
+    <div class="input-element">
+      <label>Do you think I am cute?</label>
+      <div class="input-element">
+        <label>
+          <input type="radio" name="thought" value="yes" required class="inputradio">Yes, super cute
+        </label>
+      </div>
+      <div class="input-element">
+        <label>
+          <input type="radio" name="thought" value="yes" class="inputradio">YES but in capital
+        </label>
+      </div>
+    </div>
+    <div class="input-element">
+      <label>Shared Interests or Hobbies</label>
+      <div class="input-element">
+        <label>
+          <input type="checkbox" name="ideas" value="romcom">
+          I watch romcom and always end up crying
+        </label>
+      </div>
+      <div class="input-element">
+        <label>
+          <input type="checkbox" name="ideas" value="dog">
+          I am a mad, dog lover (can talk dog language too :)
+        </label>
+      </div>
+      <div class="input-element">
+        <label>
+          <input type="checkbox" name="ideas" value="food">
+          Food!! I'm a foodie
+        </label>
+      </div>
+      <div class="input-element">
+        <label>
+          <input type="checkbox" name="ideas" value="gym">
+          Sleep and gym :)
+        </label>
+      </div>
+      <div class="input-element">
+        <label>
+          <input type="checkbox" name="ideas" value="all">
+          All of the above babe, clearly we should go on a date??
+        </label>
+      </div>
+    </div>
+    <div class="input-element">
+      <label>Anything you want to tell me or feel about me?</label>
+      <textarea></textarea>
+    </div>
+    <button type="submit" id="submit">Submit</button>
+  </form>
+</body>
+</html>
